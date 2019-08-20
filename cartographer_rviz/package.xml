@@ -15,7 +15,7 @@
   limitations under the License.
 -->
 
-<package format="2">
+<package>
   <name>cartographer_rviz</name>
   <version>1.0.0</version>
   <description>
@@ -38,18 +38,31 @@
 
   <build_depend>git</build_depend>
 
-  <depend version_gte="1.0.0">cartographer</depend>
-  <depend version_gte="1.0.0">cartographer_ros</depend>
-  <depend version_gte="1.0.0">cartographer_ros_msgs</depend>
-  <depend>eigen_conversions</depend>
-  <depend>libqt5-core</depend>
-  <depend>libqt5-gui</depend>
-  <depend>libqt5-widgets</depend>
-  <depend>message_runtime</depend>
-  <depend>qtbase5-dev</depend>
-  <depend>roscpp</depend>
-  <depend>roslib</depend>
-  <depend>rviz</depend>
+  <build_depend version_gte="1.0.0">cartographer</build_depend>
+  <build_depend version_gte="1.0.0">cartographer_ros</build_depend>
+  <build_depend version_gte="1.0.0">cartographer_ros_msgs</build_depend>
+  <build_depend>eigen_conversions</build_depend>
+  <build_depend>libqt5-core</build_depend>
+  <build_depend>libqt5-gui</build_depend>
+  <build_depend>libqt5-widgets</build_depend>
+  <build_depend>message_runtime</build_depend>
+  <build_depend>qtbase5-dev</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>roslib</build_depend>
+  <build_depend>rviz</build_depend>
+
+  <run_depend version_gte="1.0.0">cartographer</run_depend>
+  <run_depend version_gte="1.0.0">cartographer_ros</run_depend>
+  <run_depend version_gte="1.0.0">cartographer_ros_msgs</run_depend>
+  <run_depend>eigen_conversions</run_depend>
+  <run_depend>libqt5-core</run_depend>
+  <run_depend>libqt5-gui</run_depend>
+  <run_depend>libqt5-widgets</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>qtbase5-dev</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>roslib</run_depend>
+  <run_depend>rviz</run_depend>
 
   <export>
       <rviz plugin="${prefix}/rviz_plugin_description.xml" />

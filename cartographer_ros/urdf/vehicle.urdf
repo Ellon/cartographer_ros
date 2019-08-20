@@ -1,0 +1,21 @@
+<robot name="vehicle">
+  <link name="vehicle"/>
+  <link name="velodyne_front"/>
+  <joint name="velodyne_front_joint" type="fixed">
+    <parent link="vehicle"/>
+    <child link="velodyne_front"/>
+    <origin xyz="1.945378 0.004842 0.867" rpy="-1.53280007387e-18 0.139626 -0.016376"/>
+  </joint>
+  <link name="imu"/>
+  <joint name="imu_joint" type="fixed">
+    <parent link="vehicle"/>
+    <child link="imu"/>
+    <origin xyz="0.07 0.0 0.21" rpy="3.141592 -3.70576914424e-22 1.570796"/>
+  </joint>
+  <link name="velodyne_rear"/>
+  <joint name="velodyne_rear_joint" type="fixed">
+    <parent link="vehicle"/>
+    <child link="velodyne_rear"/>
+    <origin xyz="-1.918704 -0.009111 0.867" rpy="-5.4742859781e-20 0.139626 3.134922"/>
+  </joint>
+</robot>

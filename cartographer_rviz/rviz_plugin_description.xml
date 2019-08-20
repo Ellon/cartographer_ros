@@ -22,5 +22,6 @@
       Displays submaps as a unified map in RViz.
       https://github.com/googlecartographer/cartographer_ros
     </description>
+    <message_type>cartographer_ros_msgs/SubmapList</message_type>
   </class>
 </library>
